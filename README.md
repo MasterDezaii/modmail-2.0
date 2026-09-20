@@ -1,2 +1,7 @@
-# modmail-2.0
-Production-ready Discord ModMail / Support Ticket Bot
+import { startBot } from './discord.js';
+
+startBot().catch((error) => {
+  console.error('Failed to start ModMail bot:', error);
+  process.exit(1);
+});
+
